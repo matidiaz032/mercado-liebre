@@ -1,0 +1,101 @@
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--yellow);
+    font-size: var(--paragraph);
+    padding-bottom: 10px;
+}
+
+header .burger-menu {
+    background-color: var(--light-blue);
+    color: white;
+    width: 25px;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+header .logo {
+    width: 50%;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Search bar */
+header .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+header .search-bar input {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 85%;
+    position: relative;
+}
+
+header .search-bar button {
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: white;
+    border: none;
+    position: absolute;
+    right: 10px;
+}
+
+/* Quota */
+header .quota {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+/* Nav */
+header nav ul#top-list {
+    margin-bottom: 15px;
+}
+
+/* End Header */
+
+@media (min-width: 768px) {
+    header .burger-menu {
+        display: none;
+    }
+
+    header .nav-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .nav-header .top-list,
+    header .nav-header .top-list-forms {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .logo, 
+    header .quota {
+        width: 30%;
+    }
+
+    header .search-bar {
+        width: 40%;
+    }
+
+    header .search-bar button {
+        right: 33%;
+    }
+
+    header .quota {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
