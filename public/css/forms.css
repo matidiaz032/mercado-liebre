@@ -61,6 +61,10 @@
     margin-bottom: 1rem;
 }
 
+.forms .form-container .btn-containers .btn-enviar:hover {
+    background-color: #0022AA;
+}
+
 .forms .form-container .btn-containers .btn-reset {
     background-color: var(--dark-grey);
     color: var(--light-grey);

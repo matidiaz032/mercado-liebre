@@ -47,6 +47,11 @@ main.home {
     right: 20px;
 }
 
+.home .products-container .card:hover .card-content .icon-truck i {
+    transform: rotateZ(-90deg);
+    transition: transform 2s;
+}
+
 .home .card .card-content .icon-truck i {
     color: var(--green);
     font-size: 16px;
@@ -68,6 +73,11 @@ main.home {
 }
 
 .home .card .card-content .product-name {
+    display: none;
+}
+
+.home .products-container .card:hover .card-content .product-name {
+    display: block;
     color: var(--dark-grey);
     font-size: 15px;
     margin-top: 15px;
@@ -92,8 +102,11 @@ article img {
         justify-content: space-between;
     }
     .home .card {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 48%;
+    }
+
+    .home .card:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 

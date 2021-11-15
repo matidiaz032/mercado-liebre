@@ -29,3 +29,18 @@ footer .copy {
     font-size: var(--paragraph);
     margin: 0 0 15px 20px;
 }
+
+@media (min-width: 1024px) {
+    footer {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer .footer-article {
+        width: 33%;
+    }
+    footer .footer-article i:hover {
+        color: var(--blue);
+    }
+}
