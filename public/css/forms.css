@@ -1,0 +1,86 @@
+.forms {
+    margin: 1rem;
+}
+
+.forms .form-container {
+    padding: 1rem;
+}
+
+.forms .form-container .input-form,
+.forms .form-container .radios-form,
+.forms .form-container .checks-form {
+    margin: 1rem 0;
+}
+
+.forms .form-container .input-form input {
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.forms .form-container .input-form small {
+    color: red;
+}
+
+.forms .form-container label {
+    font-weight: bold;
+}
+
+.forms .form-container .radios-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.forms .form-container .checks-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms .form-container .check-item {
+    margin: .5rem 0;
+}
+
+.forms .form-container .btn-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.forms .form-container .btn-containers button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.forms .form-container .btn-containers .btn-enviar {
+    background-color: var(--light-blue);
+    color: var(--light-grey);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.forms .form-container .btn-containers .btn-reset {
+    background-color: var(--dark-grey);
+    color: var(--light-grey);
+}
+
+/* media querys */
+/* tablet */
+@media (min-width: 480px) {
+    .forms {
+        display: flex;
+        justify-content: center;
+    }
+    .forms .form-container {
+        width: 75%;
+    }
+}
+
+/* desktop */
+@media (min-width: 769px) {
+    .forms .form-container {
+        width: 60%;
+    }
+}
